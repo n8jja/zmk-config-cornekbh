@@ -197,6 +197,26 @@
             bindings = <&mo 2>;
             key-positions = <17 16>;
         };
+
+        up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <2 3>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <14 13>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <14 15>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <15 16>;
+        };
     };
 
     //
