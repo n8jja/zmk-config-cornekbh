@@ -134,37 +134,37 @@
 
         minus {
             bindings = <&kp KP_MINUS>;
+            key-positions = <19 7>;
+            layers = <0>;
+        };
+
+        scroll-up {
+            bindings = <&kp K_SCROLL_UP>;
+            key-positions = <6 18>;
+            layers = <0>;
+        };
+
+        left-brack {
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <31 19>;
             layers = <0>;
         };
 
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
-            layers = <0>;
-        };
-
-        leftbrack {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
-        rightbrack {
+        right-brack {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 32>;
+            key-positions = <32 20>;
             layers = <0>;
         };
 
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <20 19>;
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 8>;
             layers = <0>;
         };
 
         para-great {
             bindings = <&paragreat>;
-            key-positions = <20 21>;
+            key-positions = <21 9>;
             layers = <0>;
         };
     };
@@ -184,8 +184,8 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp F             &kp P         &kp G        &kp J      &kp L          &kp I          &kp O    &kp SEMICOLON  &none
-&kp TAB         &kp A  &kp R  &kp S             &kp F         &kp D        &kp H      &kp N          &kp E          &kp I    &kp O          &kp BACKSLASH
+&kp ESCAPE      &kp Q  &kp W  &kp F             &kp P         &kp G        &kp J      &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp MINUS
+&kp TAB         &kp A  &kp R  &kp S             &kp T         &kp D        &kp H      &kp N          &kp E          &kp I    &kp O          &kp BACKSLASH
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp K      &kp M          &kp COMMA      &kp DOT  &kp FSLH       &kp SQT
                               &kp LEFT_CONTROL  &kp LEFT_GUI  &kp ENTER    &kp SPACE  &kp BACKSPACE  &kp RIGHT_GUI
             >;
