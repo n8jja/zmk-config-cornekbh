@@ -69,24 +69,24 @@
         compatible = "zmk,combos";
 
         escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 13>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
+        at-sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 14>;
         };
 
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
             layers = <0>;
         };
 
-        equal {
+        dollar {
             bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
+            key-positions = <4 16>;
             layers = <0>;
         };
 
@@ -96,39 +96,39 @@
             layers = <0>;
         };
 
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
             layers = <0>;
         };
 
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <13 25>;
             layers = <0>;
         };
 
-        backslash {
-            bindings = <&kp BACKSLASH>;
+        ampersand {
+            bindings = <&kp AMPERSAND>;
             key-positions = <26 14>;
             layers = <0>;
         };
 
         star {
             bindings = <&kp STAR>;
-            key-positions = <8 20>;
+            key-positions = <27 15>;
             layers = <0>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 20>;
+        left-par {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 28>;
             layers = <0>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
+        right-par {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <17 29>;
             layers = <0>;
         };
 
