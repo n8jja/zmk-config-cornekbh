@@ -162,10 +162,40 @@
             layers = <0>;
         };
 
-        para-great {
-            bindings = <&paragreat>;
+        slash {
+            bindings = <&kp SLASH>;
             key-positions = <21 9>;
             layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <21 33>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <19 20>;
+        };
+
+        layer-3 {
+            bindings = <&mo 3>;
+            key-positions = <6 7>;
+        };
+
+        layer-4 {
+            bindings = <&mo 4>;
+            key-positions = <18 19>;
+        };
+
+        layer-1 {
+            bindings = <&mo 1>;
+            key-positions = <5 4>;
+        };
+
+        layer-2 {
+            bindings = <&mo 2>;
+            key-positions = <17 16>;
         };
     };
 
