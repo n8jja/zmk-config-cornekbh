@@ -84,12 +84,6 @@
             layers = <0>;
         };
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <4 16>;
-            layers = <0>;
-        };
-
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
