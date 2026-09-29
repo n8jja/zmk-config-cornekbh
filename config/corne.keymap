@@ -22,46 +22,11 @@
             require-prior-idle-ms = <120>; /* tune to taste */
         };
 
-        para: para {
+        activate_homerow: activate_homerow {
             compatible = "zmk,behavior-tap-dance";
+            label = "ACTIVATE_HOMEROW";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-        };
-
-        caps: caps {
-            compatible = "zmk,behavior-caps-word";
-            #binding-cells = <0>;
-            continue-list = <MINUS BACKSPACE>;
-        };
-
-        paraless: paraless {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        paragreat: paragreat {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-    };
-
-    macros {
-        browsertab: browsertab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LCTRL>;
+            bindings = <&kp LEFT_CONTROL>, <&kp LC(LEFT_GUI)>;
         };
     };
 
@@ -228,10 +193,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp F             &kp P         &kp G        &kp J      &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp MINUS
-&kp TAB         &kp A  &kp R  &kp S             &kp T         &kp D        &kp H      &kp N          &kp E          &kp I    &kp O          &kp BACKSLASH
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp K      &kp M          &kp COMMA      &kp DOT  &kp FSLH       &kp SQT
-                              &kp LEFT_CONTROL  &kp LEFT_GUI  &kp ENTER    &kp SPACE  &kp BACKSPACE  &kp RIGHT_GUI
+&kp ESCAPE      &kp Q  &kp W  &kp F              &kp P         &kp G        &kp J      &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp MINUS
+&kp TAB         &kp A  &kp R  &kp S              &kp T         &kp D        &kp H      &kp N          &kp E          &kp I    &kp O          &kp BACKSLASH
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C              &kp V         &kp B        &kp K      &kp M          &kp COMMA      &kp DOT  &kp FSLH       &kp SQT
+                              &activate_homerow  &kp LEFT_GUI  &kp ENTER    &kp SPACE  &kp BACKSPACE  &kp RIGHT_GUI
             >;
         };
 
