@@ -278,20 +278,20 @@
         MMD {
             display-name = "Multimedia";
             bindings = <
-&trans  &kp LG(LS(M))  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &none         &none   &none   &none   &none  &none        &none
-&trans  &kp F11        &kp F12         &trans            &trans      &none         &none   &none   &none   &none  &none        &none
-&trans  &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_CLR  &bt BT_CLR    &none   &none   &none   &none  &bootloader  &none
-                                       &trans            &trans      &trans        &trans  &trans  &trans
+&trans  &kp LG(LS(M))  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &none     &none   &none   &none   &none  &none        &none
+&trans  &none          &none           &none             &none       &none     &none   &none   &none   &none  &none        &none
+&trans  &none          &none           &none             &none       &none     &none   &none   &none   &none  &bootloader  &none
+                                       &trans            &trans      &trans    &trans  &trans  &trans
             >;
         };
 
-        EXTRA {
-            display-name = "Extra";
+        SET {
+            display-name = "Settings";
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &msc SCRL_UP      &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_DOWN    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans  &trans     &trans     &trans  &trans  &trans
-                                &trans          &trans           &trans            &trans  &trans     &trans
+&trans  &studio_unlock  &sys_reset      &none           &none            &msc SCRL_UP      &none   &none   &none   &none  &none  &none
+&trans  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &msc SCRL_DOWN    &none   &none   &none   &none  &none  &none
+&trans  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none             &none   &none   &none   &none  &none  &none
+                                        &trans          &trans           &trans            &trans  &trans  &trans
             >;
         };
     };
