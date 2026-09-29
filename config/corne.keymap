@@ -68,7 +68,7 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
+        exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <1 13>;
         };
@@ -84,7 +84,7 @@
             layers = <0>;
         };
 
-        dollar {
+        equal {
             bindings = <&kp EQUAL>;
             key-positions = <4 16>;
             layers = <0>;
